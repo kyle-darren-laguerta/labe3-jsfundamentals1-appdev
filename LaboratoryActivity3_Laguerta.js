@@ -2,6 +2,8 @@
 // Step 2: Use this base number in all the problems below.
 // Example: If your ID ends with 7, your base number is 7.
 
+// My base number is 0
+
 // Problem 1: Grade Calculator
 // Write a function calculateGrade(score) that returns the grade based on this rule:
 // • 90–100: A
@@ -40,7 +42,7 @@ function showStars(rows) {
         process.stdout.write("\n");
     }
 }
-showStars(2);
+// showStars(2);
 
 // Problem 3: Prime Number Checker
 // Write a function isPrime(n) that checks if a number is prime.
@@ -53,7 +55,7 @@ function isPrime(n) {
     }
     return true;
 }
-console.log(`Number 10 is ${(isPrime(10) ? "Prime" : "Composite")}`);
+// console.log(`Number 10 is ${(isPrime(10) ? "Prime" : "Composite")}`);
 
 // Problem 4: Multiplication Table
 // Write a function multiplicationTable(n) that prints the multiplication table of n from 1 to 10.
@@ -63,6 +65,6 @@ function multiplicationTable(n) {
         console.log(`${n} x ${i} = ${n*i}`);
     }
 }
-multiplicationTable(0);
+// multiplicationTable(0);
 
 
