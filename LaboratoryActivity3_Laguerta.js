@@ -26,12 +26,21 @@ function calculateGrade(score) {
     }
 }
 
-let score = 5;
-console.log(`Score: ${score}; Grade: ${calculateGrade(score)}`);
+// let score = 5;
+// console.log(`Score: ${score}; Grade: ${calculateGrade(score)}`);
 
 // Problem 2: Star Pattern
 // Write a function showStars(rows) that prints a triangle of stars using loops.
 // Rows should be equal to your base number + 2. Example: If base = 4 → rows = 6.
+function showStars(rows) {
+    for (let i=1; i <= rows; i++) {
+        for (j=1; j <= i; j++) {
+            process.stdout.write("*");
+        }
+        process.stdout.write("\n");
+    }
+}
+showStars(2);
 
 // Problem 3: Prime Number Checker
 // Write a function isPrime(n) that checks if a number is prime.
@@ -40,3 +49,4 @@ console.log(`Score: ${score}; Grade: ${calculateGrade(score)}`);
 // Problem 4: Multiplication Table
 // Write a function multiplicationTable(n) that prints the multiplication table of n from 1 to 10.
 // Use n = base number. Example: If base = 5 → print the multiplication table of 5.
+
