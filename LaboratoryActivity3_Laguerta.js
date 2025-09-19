@@ -46,7 +46,25 @@ showStars(2);
 // Write a function isPrime(n) that checks if a number is prime.
 // Check if your base number + 10 is prime. Example: If base = 3 → check 13 → Prime.
 
+function isPrime(n) {
+    for (let i=2; i <= n/2; i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+for (let i=1; i < 100; i++) {
+    console.log(`${i}: ${(isPrime(i)) ? "Prime" : "Composite"}`);
+}
+
 // Problem 4: Multiplication Table
 // Write a function multiplicationTable(n) that prints the multiplication table of n from 1 to 10.
 // Use n = base number. Example: If base = 5 → print the multiplication table of 5.
-
+function multiplicationTable(n) {
+    for (let i=1; i <= 10; i++) {
+        console.log(`${n} x ${i} = ${n*i}`);
+    }
+}
+multiplicationTable(0);
